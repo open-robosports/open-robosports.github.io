@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "monoglyceride";
+  src: url(../fonts/monoglyceride/monodb_.ttf) format("truetype");
+}
+
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+.margin-top-10 {
+  margin-top: 10px;
+}
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.ors-font{
+  font-family: monoglyceride;
+}
+
+/* Portrait */
+@media screen and (orientation:portrait) {
+  .brand-top-margin {
+    margin-top: -250px;
+  }
+}
+.img-padding {
+  padding: 40px;
+}
+.title {
+  font-family: monoglyceride;
+  color: #1b176b;
+}
+.navbar .navbar-nav .nav-item .nav-link, .navbar .navbar-nav .nav-item.active .nav-link, .navbar .navbar-nav .nav-item:hover  {
+  color: #1b176b;
+}
+.navbar .navbar-nav .nav-item {
+  border-radius: 5%;
+
+}
+.navbar .navbar-nav .nav-item.active{
+  background-color: #e9e8f0;
+}
+.img-hover-zoom {
+  transition: transform 0.2s;
+}
+.img-hover-zoom:hover {
+  transform: scale(1.2);
+} 
+
+.section-img {
+  padding: 20px 0;
+  min-height: 330px;
+  background-size: cover;
+  background-position-x: center;
+  position: relative;
+  border-radius: 5%;
+}
+
+.section-img .section-text {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.section-img .img-copy {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  color: #fff;
+  font-size: 10px;
+}
+
+.section-img .section-text .title {
+  color: #fff;
+}
+
+.section-img .section-text .description {
+  margin-top: 100px;
+  color: #fff;
+}
+
+.section-img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 5%;
+}
+
+@media (max-width: 445px) {
+  .brand-top-margin {
+    margin-top: -75%;
+  }
+}
+@media (min-width: 768px) {
+  .section-img {
+    min-height: 450px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-img {
+    min-height: 450px;
+    background-position-y: -100px;
+  }
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
