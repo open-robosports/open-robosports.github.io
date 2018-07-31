@@ -36,9 +36,7 @@
 
 /* Portrait */
 @media screen and (orientation:portrait) {
-  .brand-top-margin {
-    margin-top: -250px;
-  }
+  
 }
 .img-padding {
   padding: 40px;
@@ -56,6 +54,9 @@
 .navbar .navbar-nav .nav-item .nav-link i, .navbar .navbar-nav .nav-item.active .nav-link i, .navbar .navbar-nav .nav-item:hover i  {
   color: #be0000;
 }
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus, .dropdown-menu a:hover, .dropdown-menu a:focus, .dropdown-menu a:active{
+  background-color: #1b176b;
+}
 .navbar .navbar-nav .nav-item {
   border-radius: 5%;
 
@@ -69,10 +70,12 @@
 .img-hover-zoom:hover {
   transform: scale(1.2);
 } 
-
+.section-header{
+  height: 70vh;
+}
 .section-img {
   padding: 20px 0;
-  min-height: 330px;
+  /* min-height: 330px */
   background-size: cover;
   background-position-x: center;
   position: relative;
@@ -115,9 +118,7 @@
 }
 
 @media (max-width: 445px) {
-  .brand-top-margin {
-    margin-top: -75%;
-  }
+  
 }
 @media (min-width: 768px) {
   .section-img {
