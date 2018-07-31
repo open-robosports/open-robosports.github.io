@@ -172,3 +172,7 @@ header .overlay {
   opacity: 0.5;
   z-index: 1;
 }
+
+.showOnScroll, .showOnReady{
+  opacity: 0;
+}
