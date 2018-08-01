@@ -169,11 +169,12 @@
 
     <header>
         <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <script>
-                document.write('<source src="./assets/video/home_' + randomInt(1, 5) + '.mp4" type="video/mp4">');
-            </script>
-        </video>
+        <script>
+            var num = randomInt(1, 5);
+            document.write('<video playsinline="playsinline" class="home-video" autoplay="autoplay" muted="muted" loop="loop" poster="./assets/img/home/home_poster_'+num+'.png">');
+            document.write('<source src="./assets/video/home/home_' + num + '.mp4" type="video/mp4">');
+            document.write('</video>');
+        </script>
         <div class="container h-100">
             <div class="d-flex text-center h-100">
                 <div class="my-auto w-100 text-white showOnReady">
@@ -192,42 +193,42 @@
                 <div class="row justify-content-center margin-top-20">
                     <div class="col-md-4 col-sm-4 margin-bottom-20 showOnScroll">
                         <a href="./velocistas/">
-                            <img src="./assets/img/categorias/velocidstas_logo.png" class="img-fluid img-hover-zoom" style="max-height: 200px;" alt="">
+                            <img src="./assets/img/categorias/velocistas/velocistas_logo.png" class="img-fluid img-hover-zoom" style="max-height: 200px;" alt="">
                         </a>
                         <h3 class="ors-font ors-blue">Velocistas</h4>
                             <p>Robots siguelíneas que luchan por ser los mas veloces en circuitos de curvas amplias y rectas enormes.</p>
                     </div>
                     <div class="col-md-4 col-sm-4 margin-bottom-20 showOnScroll">
                         <a href="./humanoides/">
-                            <img src="./assets/img/categorias/humanoides_logo.png" class="img-fluid img-hover-zoom" style="max-height: 200px;" alt="">
+                            <img src="./assets/img/categorias/humanoides/humanoides_logo.png" class="img-fluid img-hover-zoom" style="max-height: 200px;" alt="">
                         </a>
                         <h3 class="ors-font ors-blue">Humanoides</h4>
                             <p>Robots antropomórficos cuyo unico objetivo es echar a su contrincante del ring o tumbarlo en el menor tiempo posible.</p>
                     </div>
                     <div class="col-md-4 col-sm-4 margin-bottom-20 showOnScroll">
-                        <a href="./">
-                            <img src="./assets/img/categorias/minisumo_logo.png" class="img-fluid img-hover-zoom" style="max-height: 200px;" alt="">
+                        <a href="./minisumo/">
+                            <img src="./assets/img/categorias/minisumo/minisumo_logo.png" class="img-fluid img-hover-zoom" style="max-height: 200px;" alt="">
                         </a>
                         <h3 class="ors-font ors-blue">Minisumo</h4>
                             <p>Robots enfrentados en fuertes batallas por conquistar el dohyo echando por los suelos a su contrincante.</p>
                     </div>
                     <div class="col-md-4 col-sm-4 margin-bottom-20 showOnScroll">
-                        <a href="./">
-                            <img src="./assets/img/categorias/rastreadores_logo.png" class="img-fluid img-hover-zoom" style="max-height: 200px;" alt="">
+                        <a href="./rastreadores/">
+                            <img src="./assets/img/categorias/rastreadores/rastreadores_logo.png" class="img-fluid img-hover-zoom" style="max-height: 200px;" alt="">
                         </a>
                         <h3 class="ors-font ors-blue">Rastreadores</h4>
                             <p>Robots especializados en seguir las indicaciones para encontrar el camino correcto hacia la meta.</p>
                     </div>
                     <div class="col-md-4 col-sm-4 margin-bottom-20 showOnScroll">
-                        <a href="./">
-                            <img src="./assets/img/categorias/combate_logo.png" class="img-fluid img-hover-zoom" style="max-height: 200px;" alt="">
+                        <a href="./combate/">
+                            <img src="./assets/img/categorias/combate/combate_logo.png" class="img-fluid img-hover-zoom" style="max-height: 200px;" alt="">
                         </a>
                         <h3 class="ors-font ors-blue">Combate</h4>
                             <p>Robots peleando a muerte hasta que solo quede uno funcionando en un cuadrilátero blindado.</p>
                     </div>
                     <div class="col-md-4 col-sm-4 margin-bottom-20 showOnScroll">
-                        <a href="./">
-                            <img src="./assets/img/categorias/laberinto_logo.png" class="img-fluid img-hover-zoom" style="max-height: 200px;" alt="">
+                        <a href="./laberinto/">
+                            <img src="./assets/img/categorias/laberinto/laberinto_logo.png" class="img-fluid img-hover-zoom" style="max-height: 200px;" alt="">
                         </a>
                         <h3 class="ors-font ors-blue">Laberinto</h4>
                             <p>Robots que deben encontrar la salida a un laberinto del que solo podrán ver sus paredes.</p>
@@ -270,7 +271,7 @@
     <!--	Plugin for Sharrre btn -->
     <script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript"></script>
     <!-- Custom JS file -->
-    <script src="./assets/js/custom.js" type="text/javascript"></script>
+    <script src="./assets/js/custom.js?kc=5" type="text/javascript"></script>
     <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
     <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script>
 </body>
