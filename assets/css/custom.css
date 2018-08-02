@@ -117,8 +117,10 @@
   border-radius: 5%;
 }
 
-@media (max-width: 445px) {
-  
+@media (max-width: 1190px) {
+  .reset-background-position-small{
+    background-position-y: 0!important;
+  }
 }
 @media (min-width: 768px) {
   .section-img {
