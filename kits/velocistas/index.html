@@ -49,9 +49,27 @@
               <img src="../../assets/img/logos/ors_logo_horizontal.png" alt="Open RoboSports Logo" style="max-height: 100%;">
             </a>
           </li>
-          <li class="dropdown nav-item active">
+          <li class="dropdown nav-item">
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
               <i class="material-icons">category</i> Categorías
+              <div class="ripple-container"></div>
+            </a>
+            <div class="dropdown-menu">
+              <h6 class="dropdown-header">Siguelíneas</h6>
+              <a href="../../categorias/velocistas/" class="dropdown-item">Velocistas</a>
+              <a href="../../categorias/rastreadores/" class="dropdown-item">Rastreadores</a>
+              <h6 class="dropdown-header">Caminantes</h6>
+              <a href="../../categorias/humanoides/" class="dropdown-item">Humanoides</a>
+              <h6 class="dropdown-header">Versus</h6>
+              <a href="../../categorias/minisumo/" class="dropdown-item">Minisumo</a>
+              <a href="../../categorias/combate/" class="dropdown-item">Combate</a>
+              <h6 class="dropdown-header">Desafío</h6>
+              <a href="../../categorias/laberinto/" class="dropdown-item">Laberinto</a>
+            </div>
+          </li>
+          <li class="dropdown nav-item active">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">settings</i> Kits
               <div class="ripple-container"></div>
             </a>
             <div class="dropdown-menu">
@@ -65,24 +83,6 @@
               <a href="../combate/" class="dropdown-item">Combate</a>
               <h6 class="dropdown-header">Desafío</h6>
               <a href="../laberinto/" class="dropdown-item">Laberinto</a>
-            </div>
-          </li>
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
-              <i class="material-icons">settings</i> Kits
-              <div class="ripple-container"></div>
-            </a>
-            <div class="dropdown-menu">
-              <h6 class="dropdown-header">Siguelíneas</h6>
-              <a href="../../kits/velocistas/" class="dropdown-item">Velocistas</a>
-              <a href="../../kits/rastreadores/" class="dropdown-item">Rastreadores</a>
-              <h6 class="dropdown-header">Caminantes</h6>
-              <a href="../../kits/humanoides/" class="dropdown-item">Humanoides</a>
-              <h6 class="dropdown-header">Versus</h6>
-              <a href="../../kits/minisumo/" class="dropdown-item">Minisumo</a>
-              <a href="../../kits/combate/" class="dropdown-item">Combate</a>
-              <h6 class="dropdown-header">Desafío</h6>
-              <a href="../../kits/laberinto/" class="dropdown-item">Laberinto</a>
             </div>
           </li>
           <li class="nav-item">
@@ -132,13 +132,13 @@
   </nav>
   <!-- FIN NAVBAR -->
 
-  <div class="page-header section-header header-filter" data-parallax="true" style="background-image: url('../../assets/img/categorias/velocistas/velocistas_background.jpg');background-position-y: 10px">
+  <div class="page-header section-header header-filter reset-background-position-small" data-parallax="true" style="background-image: url('../../assets/img/kits/velocistas/velocistas_background.jpg');background-position-y: -60px">
     <div class="container">
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto">
           <div class="brand text-center brand-top-margin showOnReady">
             <h1 class="ors-font">Velocistas</h1>
-            <h3 class="title text-center">Características y normativa</h3>
+            <h3 class="title text-center">Kits y Proyectos Open</h3>
           </div>
         </div>
       </div>
@@ -147,72 +147,83 @@
   <div class="main main-raised">
     <div class="container">
       <div class="section">
-        <div class="row showOnReady">
-          <div class="col-md-12">
-            <h2 class="ors-font ors-blue text-center margin-top-0">La pista de Velocistas</h2>
-          </div>
-          <div class="col-md-6 margin-bottom-20 d-flex align-items-center">
-            <img src="../../assets/img/categorias/velocistas/velocistas_pista.jpg" alt="Pista de Velocistas Oshwdem 2017" title="Pista de Velocistas Oshwdem 2017" class="rounded" width="100%">
-          </div>
-          <div class="col-md-6 d-flex align-items-center">
-            <span>
-              <p class="text-justify">
-                Se trata de un largo recorrido cerrado compuesto por largas rectas y unas curvas muy amplias, de unos 40cm de diametro.
-              </p>
-              <br>
-              <p class="text-justify">
-                Esto permite que los siguelíneas puedan alcanzar velocidades muy altas, llegando incluso a los 3 o 4 m/s, incluso más acelerando en las rectas.
-              </p>
-            </span>
-          </div>
-        </div>
-        <div class="row showOnScroll margin-top-20">
-          <div class="col-md-12">
-            <h2 class="ors-font ors-blue text-center margin-top-0">Desarrollo de Competición</h2>
-          </div>
 
-          <div class="col-md-6 d-flex align-items-center">
-            <span>
-              <p class="text-justify">
-                Normalmente, el desarrollo de la competición consiste en dos tandas principales:
-                <ul style="font-size: 0.8rem;">
-                  <li class="text-justify">En la primera fase, todos los robots compiten individualmente buscando hacer la vuelta rápida para estar entre los primeros y hacerse más fácil la segunda fase</li>
-                  <li class="text-justify">En la segunda y última fase, los robots más rapidos de la primera se medirán en vueltas de persecución en las que gana el que antes consiga alcanzar al robot contrincante.</li>
-                </ul>
-              </p>
-              <br>
-              <p class="text-justify">
-                Es posible que estas dinámicas se modifiquen en función del número de participantes u otros factores. Para posibles cambios, podeis revisar la normativa a continuación.
-              </p>
-            </span>
+        <div class="card card-nav-tabs showOnReady">
+          <div class="card-header card-header-info">
+            <div class="nav-tabs-navigation">
+              <h3 class="ors-font ors-blue margin-top-0 margin-bottom-0 text-center">¿Quieres aportar un nuevo Kit o Proyecto Open?</h2>
+            </div>
           </div>
-          <div class="col-md-6 margin-bottom-20 d-flex align-items-center">
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" width="100%" controlsList="nodownload" class="rounded" title="Tanda de Velocistas en GranáBot 2018" poster="../../assets/img/categorias/velocistas/velocistas_poster_1.png">
-              <source src="../../assets/video/categorias/velocistas/velocistas_1.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="row showOnScroll margin-top-20">
-          <div class="col-md-12">
-            <h2 class="ors-font ors-blue text-center margin-top-0">Normativa de Velocistas</h2>
-          </div>
-
-          <div class="col-md-12 text-center margin-bottom-20">
-            <a href="https://github.com/open-robosports/normativa-velocistas" target="_blank" title="Normativa de Velocistas">
-              <img src="../../assets/img/logos/github_logo.png" alt="Github Logo" class="rounded img-hover-zoom" width="100%" style="max-width: 150px;">
-            </a>
-          </div>
-          <div class="col-md-12  text-center">
-            <p>
-              Puedes ver toda la normativa de Velocistas en nuestro repositorio de
-              <a href="https://github.com/open-robosports/normativa-velocistas" target="_blank">GitHub</a>.
+          <div class="card-body ">
+            <p class="text-justify"> Ponte en contacto con nosotros mediante el e-mail
+              <a href='mailto:openrobosports@gmail.com?subject=[KITS][VELOCISTAS] Solicitud de nuevo Kit'>openrobosports@gmail.com</a> y añadiremos encantados tu proyecto a nuestra lista siempre que cumpla con la
+              <a href="https://github.com/open-robosports/normativa-velocistas" target="_blank">normativa de velocistas</a>.
             </p>
-            <p>
-              También puedes enviarnos issues sobre cualquier problema o duda que os encontreis acerca de cualquier aspecto de la normativa
-            </p>
+
           </div>
         </div>
 
+
+        <h3 class="ors-font ors-blue margin-bottom-20 text-center showOnScroll">Lista de Kits o Proyectos Open</h2>
+        <div class="row margin-top-20 showOnScroll">
+          <div class="col-md-12">
+            <div class="row showOnScroll rounded" style="padding: 20px;background: #eee">
+              <div class="col-md-3 d-flex align-items-center">
+                <img class="media-object rounded" src="../../assets/img/kits/velocistas/cyclops_velocista.jpg" alt="Cyclops Project; Velocista" width="100%">
+              </div>
+              <div class="col-md-6">
+                <h4 class="ors-font ors-blue"> Cyclops-project </h4>
+                <p class="text-justify">
+                  Robot de carreras open source con cámara, diseñado para introducir a nuevos constructores en la robótica de competición. Se compone de dos PCBs: la del chasis autosoportado con la electrónica principal; y la de sensores, que es intercambiable para poder adaptarlo
+                  a diferentes pruebas de seguimiento de línea.
+                </p>
+              </div>
+              <div class="col-md-3 d-flex h-100" style="margin-top: auto;">
+                <div class="w-100">
+                  <h4 class="ors-font ors-blue text-center">Autor</h4>
+                  <p class="text-center">Rubén Espino San José</p>
+                  <h4 class="ors-font ors-blue text-center">Contacto</h4>
+                  <div class="w-100 text-center">
+                    <a href="https://twitter.com/RugidoDePuma" target="_blank" class="btn btn-info btn-round btn-fab btn-fab-mini margin-bottom-0 margin-top-0">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </div>
+                  <a href="https://github.com/Resaj/cyclops-project" target="_blank" class="btn btn-danger btn-round margin-bottom-0 w-100 margin-top-20">
+                    <i class="fa fa-github"></i> Más información </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row margin-top-20 showOnScroll">
+          <div class="col-md-12">
+            <div class="row showOnScroll rounded" style="padding: 20px;background: #eee">
+              <div class="col-md-3 d-flex align-items-center">
+                <img class="media-object rounded" src="../../assets/img/kits/velocistas/pandatron_velocista.jpg" alt="Pandatron; Velocista" width="100%">
+              </div>
+              <div class="col-md-6">
+                <h4 class="ors-font ors-blue"> Pandatron </h4>
+                <p class="text-justify">
+                  Robot siguelíneas compacto controlado con un STM32F1 para mayor potencia de procesamiento. Los componentes están soldados en SMD a la placa principal para aligerar peso y poder conseguir mejores prestaciones.
+                </p>
+              </div>
+              <div class="col-md-3 d-flex h-100" style="margin-top: auto;">
+                <div class="w-100">
+                  <h4 class="ors-font ors-blue text-center">Autor</h4>
+                  <p class="text-center">Javier Isabel Hernández</p>
+                  <h4 class="ors-font ors-blue text-center">Contacto</h4>
+                  <div class="w-100 text-center">
+                    <a href="https://twitter.com/JavierIH" target="_blank" class="btn btn-info btn-round btn-fab btn-fab-mini margin-bottom-0 margin-top-0">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </div>
+                  <a href="https://github.com/JavierIH/pandatron" target="_blank" class="btn btn-danger btn-round margin-bottom-0 w-100 margin-top-20">
+                    <i class="fa fa-github"></i> Más información </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -107,15 +107,19 @@
                     </li>
                     <li class="dropdown nav-item">
                         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
-                            <i class="material-icons">settings</i> Kits de Iniciación
+                            <i class="material-icons">settings</i> Kits
                             <div class="ripple-container"></div>
                         </a>
                         <div class="dropdown-menu">
+                            <h6 class="dropdown-header">Siguelíneas</h6>
                             <a href="./kits/velocistas/" class="dropdown-item">Velocistas</a>
-                            <a href="./kits/humanoides/" class="dropdown-item">Humanoides</a>
-                            <a href="./kits/minisumo/" class="dropdown-item">Minisumo</a>
                             <a href="./kits/rastreadores/" class="dropdown-item">Rastreadores</a>
+                            <h6 class="dropdown-header">Caminantes</h6>
+                            <a href="./kits/humanoides/" class="dropdown-item">Humanoides</a>
+                            <h6 class="dropdown-header">Versus</h6>
+                            <a href="./kits/minisumo/" class="dropdown-item">Minisumo</a>
                             <a href="./kits/combate/" class="dropdown-item">Combate</a>
+                            <h6 class="dropdown-header">Desafío</h6>
                             <a href="./kits/laberinto/" class="dropdown-item">Laberinto</a>
                         </div>
                     </li>
@@ -171,7 +175,7 @@
         <div class="overlay"></div>
         <script>
             var num = randomInt(1, 5);
-            document.write('<video playsinline="playsinline" class="home-video" autoplay="autoplay" muted="muted" loop="loop" poster="./assets/img/home/home_poster_'+num+'.png">');
+            document.write('<video playsinline="playsinline" class="home-video" autoplay="autoplay" muted="muted" loop="loop" poster="./assets/img/home/home_poster_' + num + '.png">');
             document.write('<source src="./assets/video/home/home_' + num + '.mp4" type="video/mp4">');
             document.write('</video>');
         </script>
