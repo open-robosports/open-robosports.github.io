@@ -50,7 +50,7 @@ $(document).ready(function() {
     }
   });
 
-  // Crea los fullCalendar
+  /* // Crea los fullCalendar
   $('#competiciones-calendar').fullCalendar({
     // put your options and callbacks here
     height: 'auto',
@@ -89,5 +89,11 @@ $(document).ready(function() {
         return false;
       }
     }
-  });
+  }); */
+
+  
+    // Preloader
+    setTimeout(function() {
+      $('.preloader').fadeOut(500);
+    }, 1500)
 });
