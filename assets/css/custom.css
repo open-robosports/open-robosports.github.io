@@ -311,3 +311,16 @@ border-bottom-right-radius: 5px;
 .ranking .list-group-item.more {
  font-size: 12px;
 }
+.alert{
+  border-radius: 3px;
+  padding: 0.5rem 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 0;
+  background: linear-gradient(60deg, #eee, #bdbdbd);
+}
+.alert.alert-warning{
+  background: linear-gradient(60deg, #ffa726, #f57c00);
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(255, 152, 0, 0.6);
+
+}
