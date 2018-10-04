@@ -324,3 +324,17 @@ border-bottom-right-radius: 5px;
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(255, 152, 0, 0.6);
 
 }
+
+.ors-carousel img {
+  max-height: 250px;
+  object-fit: contain;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+.ors-carousel .carousel-control i{
+  color:#1b176b;
+}
+.ors-carousel .carousel-indicators li {
+  background: #1b176b;
+  border-color: #1b176b;
+}
