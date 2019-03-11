@@ -1,10 +1,19 @@
-@font-face {
-  font-family: "monoglyceride";
-  src: url(../fonts/monoglyceride/monodb_.ttf) format("truetype");
-}
+@import url("../fonts/gotham/font.css");
 
 .btn-group{
   margin: 0;
+}
+h1{
+  font-weight: 700;
+}
+h2{
+  font-weight: 500;
+}
+h3{
+  font-weight: 400;
+}
+h6.dropdown-header{
+  font-weight: 500;
 }
 .fas {
   font-size: 1.12rem;
@@ -43,13 +52,20 @@
   padding-top: 0!important;
 }
 
+.navbar > .container{
+  height: 80px;
+}
+.navbar .navbar-translate {
+  height: 100%;
+}
 .navbar .navbar-brand {
   padding: 0;
   margin-right: 0;
+  height: 100%;
 }
 
 .ors-font {
-  font-family: monoglyceride;
+  font-family: Gotham;
 }
 
 /* Portrait */
@@ -59,31 +75,35 @@
   padding: 40px;
 }
 .title {
-  font-family: monoglyceride;
-  color: #1b176b;
+  font-family: Gotham;
+  color: #203242;
 }
 .ors-blue {
-  color: #1b176b !important;
+  color: #203242 !important;
 }
 .navbar .navbar-nav .nav-item .nav-link,
 .navbar .navbar-nav .nav-item.active .nav-link,
 .navbar .navbar-nav .nav-item:hover {
-  color: #1b176b;
+  color: #203242;
 }
 .navbar .navbar-nav .nav-item .nav-link i,
 .navbar .navbar-nav .nav-item.active .nav-link i,
 .navbar .navbar-nav .nav-item:hover i {
-  color: #be0000;
+  color: #f4ab1a;
 }
 .dropdown-menu .dropdown-item:hover,
 .dropdown-menu .dropdown-item:focus,
 .dropdown-menu a:hover,
 .dropdown-menu a:focus,
 .dropdown-menu a:active {
-  background-color: #1b176b;
+  background-color: #203242;
 }
 .navbar .navbar-nav .nav-item {
   border-radius: 5%;
+  font-family: Gotham;
+}
+.navbar .navbar-nav .nav-item > a {
+  font-weight: 500!important;
 }
 .navbar .navbar-nav .nav-item.active {
   background-color: #e9e8f0;
@@ -93,6 +113,9 @@
 }
 .img-hover-zoom:hover {
   transform: scale(1.2);
+}
+.section > .title{
+  font-weight: 600;
 }
 .section-header {
   height: 70vh;
@@ -332,9 +355,9 @@ border-bottom-right-radius: 5px;
   padding-bottom: 50px;
 }
 .ors-carousel .carousel-control i{
-  color:#1b176b;
+  color:#203242;
 }
 .ors-carousel .carousel-indicators li {
-  background: #1b176b;
-  border-color: #1b176b;
+  background: #203242;
+  border-color: #203242;
 }
