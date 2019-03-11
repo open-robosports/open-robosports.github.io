@@ -54,6 +54,7 @@ h6.dropdown-header{
 
 .navbar > .container{
   height: 80px;
+  max-width: 100%;
 }
 .navbar .navbar-translate {
   height: 100%;
